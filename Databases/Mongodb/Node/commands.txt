@@ -1,0 +1,4 @@
+Commands Used:
+
+npm install mongodb (allows connection to mongodb)
+npm install dotenv (allows the import of variables from .env file)
