@@ -1,3 +1,5 @@
+/*Here we import express and our pool from the db file to set up our database connection.*/
+
 const express= require("express");
 const pool = require("./db");
 

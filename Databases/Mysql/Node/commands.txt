@@ -1,0 +1,5 @@
+Commands Used:
+
+npm install express (needed to use express)
+npm install dotenv (needed for .env import to server file)
+npm install mysql2 (needed for mysql connection) 

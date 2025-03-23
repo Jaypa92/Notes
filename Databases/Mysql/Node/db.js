@@ -1,3 +1,6 @@
+/*Here we import our variables from the .env file to use to create our pool which will be exported from here and imported into the 
+server file for the serever connection.*/
+
 const mysql = require("mysql2/promise");
 require("dotenv").config();
 
