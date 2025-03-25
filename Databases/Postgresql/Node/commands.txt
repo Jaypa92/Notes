@@ -1,0 +1,5 @@
+Commands Used:
+
+npm install pg (Installs the postgresql client)
+npm install express (Installs Express package)
+npm install dotenv (Installs dotenv package to be able to import the .env file)
