@@ -1,11 +1,10 @@
-from flask import Blueprint, render_template
+from flask import Blueprint
+from models import db
 
-main = Blueprint("main", __name__)
+home_bp = Blueprint("home", __name__)
 
-@main.route("/")
+@home_bp.route("/")
 def home():
-    return render_template("index.html", title = "Home")
-
-@main.route("/about")
-def about():
-    return render_template("about.html", title="About Us")
+    collection = db.connect().get_collection("mycollection")
+    return f"Connected to MongoDB! Found {collection.count_documents({})} documents"
+    

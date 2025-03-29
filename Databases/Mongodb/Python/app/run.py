@@ -1,6 +1,11 @@
-from __init__ import create_app
+from flask import Flask
+from config import Config
+from routes import home_bp
 
-app = create_app()
+app = Flask(__name__)
+app.config.from_object(Config)
+
+app.register_blueprint(home_bp)
 
 if __name__ == "__main__":
     app.run(debug=True)
