@@ -1,0 +1,4 @@
+Copmmands Used:
+
+pip install pymongo
+pip install python-dotenv
