@@ -1,0 +1,4 @@
+Commands Used:
+
+pip install dotenv (installed packages needed to use .env file)
+pip install mysql-connector-python (insatlled this driver to initialize communication between python and mysql)
