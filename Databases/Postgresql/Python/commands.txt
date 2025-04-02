@@ -1,0 +1,4 @@
+Commands Used:
+
+pip install psycopg2 (enables Python to connect with PostgreSQL)
+pip install dotenv (allows .env file to be used in project)
