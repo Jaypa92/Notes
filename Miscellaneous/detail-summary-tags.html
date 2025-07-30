@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail and Summary Tags</title>
+    
+    <style>
+details summary {
+  list-style: none; /* removes arrow in Firefox */
+  cursor: pointer;
+}
+
+details summary::-webkit-details-marker {
+  display: none; /* removes arrow in Chrome/Safari */
+}
+
+details summary::before {
+  content: '▶'; /* custom arrow (right-pointing) */
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg); /* rotate arrow when open */
+}
+</style>
+
+</head>
+<body>
+    <details>
+        <summary>Summary Details Tag?</summary>
+        <p>These tags allow you to make expandable and collapsible content</p>
+    </details>
+</body>
+</html>
